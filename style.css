@@ -28,6 +28,9 @@ header {
 
 .sidebar ul li {
   margin-bottom: 5px;
+  text-align: center;
+   border-bottom: 1px solid rgb(128, 125, 125);
+
 }
 
 .sidebar ul li a {
@@ -35,10 +38,27 @@ header {
   padding: 10px;
   color: #333;
   text-decoration: none;
+  font-size: 25px;
 }
 
 .sidebar ul li a.active {
+  color: rgb(242, 84, 84);
   background-color: #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+a:hover{
+  background-color: #d3dedb;
+  color: rgb(123, 63, 252) !important;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .main-content {
@@ -51,15 +71,17 @@ header {
 }
 
 .statistics {
-  background-color: #9aa79b;
+  background-color: #9a9e9a;
   display: flex;
   justify-content: space-between;
 }
 
 .statistic-box {
-  background-color: #bcb0b0;
+  background-color: #a9ab9a;
   padding: 20px;
   text-align: center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 4px;
 }
 
 .product-section {
@@ -68,19 +90,41 @@ header {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
 }
 
 .product {
-  background-color: #f4f4f4;
+  background-color: #aeb3b1;
   padding: 20px;
   text-align: center;
+  box-shadow: 1px 2px 3px rgba(89, 85, 85, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 img{
     width: 100%;
-    height: 400px;
+    height: 300px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 3px 4px 2px rgba(89, 85, 85, 0.5);
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 footer {
